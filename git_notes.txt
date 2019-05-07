@@ -103,7 +103,22 @@ git bash 操作
 	// 标签发布
 	git push origin 标签名称
 
-
+8. 分支管理
+	// 新建分支
+	git branch 分支名字
+	// 查看分支，查询结果中的“*”，代表当前所在分支 
+	git branch
+	// 切换分支
+	git checkout 分支名字
+	// 合并分支
+	// 先切换到需要合并到的分支，比如将feature_x分支合并到master分支上
+	git checkout master
+	git merge feature_x
+	// 删除分支
+	git branch -d 要删除的分支名字
+	
+	
+	
 
 
 
