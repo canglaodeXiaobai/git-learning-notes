@@ -1,5 +1,6 @@
 git小笔记
 
+git bash 操作
 1. 下载windows下安装的git安装包
 	下载地址：https://git-scm.com/download/win
 	下载好后，双击安装
@@ -26,6 +27,23 @@ git小笔记
 	git commit -m "描述信息"
 	// 查看当前本地库的状态(查看是否有更新的文件但没有提交/文件添加到暂存区但是没有提交到本地库等等)
 	git status
+	// 查看提交信息
+	git log
+	/*
+	commit 0f3b566a80a5618692d17e87605069dcd8c1c3a9
+	Author: xxx <xxxx@qq.com>
+	Date:   Tue May 7 10:51:19 2019 +0800
+
+		提交readme文件
+	*/
+	// 将暂存区的文件回滚到工作区
+	git reset HEAD 文件名
+	git checkout --文件名
+	// 回滚
+	git reset --hard 使用git log查询到的版本号
+	// 删除本地仓库的某个文件
+	git rm 文件名
+	然后提交
 	
 	// 查看所在位置
 	pwd
