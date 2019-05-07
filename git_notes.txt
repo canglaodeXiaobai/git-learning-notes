@@ -69,4 +69,23 @@ git bash 操作
 	3) New SSH key, 填写title，拷贝C:\Users\当前用户\.ssh\id_rsa.pub的内容，粘贴在key中-->Add SSH key
 	4) 使用 ssh -T git@github.com 查看是否连通，一般第一次测试都会询问你是否确定，然后设置一个访问密码。我都是随手设置一个密码，空的我没有测试。后面查询的话就是直接输入密码。连接成功出现：Hi canglaodeXiaobai! You've successfully authenticated, but GitHub does not provide shell access.
 	
+5. 添加远程仓库
+	1) 先在GitHub上创建一个新仓库
+	2) 按照创建好的新仓库命令在本地git bash上输入
+		echo "# 输入文本" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin https://github.com/GitHub仓库地址
+		git push -u origin master
+	或者
+		echo "# 输入文本" >> README.md
+		git init
+		git add README.md
+		git commit -m "first commit"
+		git remote add origin git@github.com:GitHub用户名/GitHub仓库名.git
+		git push -u origin master
+
+
+
 	
