@@ -62,4 +62,11 @@ git bash 操作
 	// 展示文件内容
 	cat 文件名
 
+4. 将本地仓库和GitHub连接
+	1) 创建SSH key
+		ssh-keygen -t -C"邮箱"，一般生成的文件在C:\Users\当前用户\.ssh 目录下
+	2) 打开GitHub官网，点击个人图标-->Setting-->SSH and GPG keys
+	3) New SSH key, 填写title，拷贝C:\Users\当前用户\.ssh\id_rsa.pub的内容，粘贴在key中-->Add SSH key
+	4) 使用 ssh -T git@github.com 查看是否连通，一般第一次测试都会询问你是否确定，然后设置一个访问密码。我都是随手设置一个密码，空的我没有测试。后面查询的话就是直接输入密码。连接成功出现：Hi canglaodeXiaobai! You've successfully authenticated, but GitHub does not provide shell access.
+	
 	
