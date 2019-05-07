@@ -85,7 +85,8 @@ git bash 操作
 		git commit -m "first commit"
 		git remote add origin git@github.com:GitHub用户名/GitHub仓库名.git
 		git push -u origin master
-
+	3) 后期远程提交文件可以使用
+		git push
 
 
 	
